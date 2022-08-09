@@ -1,0 +1,24 @@
+<html>
+    <script>
+        function numeroPrimo(numero) {
+            let restoZero = 0;
+            for (let i = numero; i >= 1; i--){
+                if(numero % i === 0){
+                    restoZero += 1;
+                }
+            }
+
+            /* caso a variavel 'restoZero' seja maior que 2 o numero nao sera primo*/
+            if(restoZero > 2) {
+                console.log(`O número ${numero} não é Primo`);
+            } else {
+                console.log(`O número ${numero} é Primo`);
+            }
+        }
+        
+        numeroPrimo(981);
+        numeroPrimo(927);
+        numeroPrimo(991);
+        numeroPrimo(969);
+    </script>
+</html>
